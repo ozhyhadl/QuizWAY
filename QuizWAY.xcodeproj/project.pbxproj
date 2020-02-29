@@ -66,23 +66,13 @@
 		D5D99EB024097EE700E4DAD5 /* QuizWAY */ = {
 			isa = PBXGroup;
 			children = (
-				D5F0BD48240AAE6000A8498C /* Model */,
-				D5D99EC624097F6700E4DAD5 /* Controller */,
 				D5D99EC724097FD100E4DAD5 /* View */,
-				D5D99EC524097F1B00E4DAD5 /* Supporting Files */,
+				D5F06CC2240B1EEB00CCE1BC /* Model */,
+				D5D99EC624097F6700E4DAD5 /* Controller */,
+				D5F06CC3240B1F2600CCE1BC /* Supporting File */,
 				D5D99EC82409800C00E4DAD5 /* Resources */,
 			);
 			path = QuizWAY;
-			sourceTree = "<group>";
-		};
-		D5D99EC524097F1B00E4DAD5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D5D99EBF24097EF600E4DAD5 /* Info.plist */,
-				D5D99EB124097EE800E4DAD5 /* AppDelegate.swift */,
-				D5D99EB324097EE800E4DAD5 /* SceneDelegate.swift */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D5D99EC624097F6700E4DAD5 /* Controller */ = {
@@ -112,15 +102,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		D5F0BD48240AAE6000A8498C /* Model */ = {
+		D5F06CC2240B1EEB00CCE1BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				D5F0BD45240AAE4F00A8498C /* Question.swift */,
 				D5F0BD4B240AB08700A8498C /* Answers.swift */,
 				D5F0BD49240AAEEF00A8498C /* EnumarateType.swift */,
 			);
-			name = Model;
-			path = ..;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5F06CC3240B1F2600CCE1BC /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				D5D99EBF24097EF600E4DAD5 /* Info.plist */,
+				D5D99EB124097EE800E4DAD5 /* AppDelegate.swift */,
+				D5D99EB324097EE800E4DAD5 /* SceneDelegate.swift */,
+			);
+			path = "Supporting File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4ZG99HL6N8;
-				INFOPLIST_FILE = QuizWAY/Info.plist;
+				INFOPLIST_FILE = "QuizWAY/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4ZG99HL6N8;
-				INFOPLIST_FILE = QuizWAY/Info.plist;
+				INFOPLIST_FILE = "QuizWAY/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
