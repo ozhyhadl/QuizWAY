@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		D5D99EB224097EE800E4DAD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D99EB124097EE800E4DAD5 /* AppDelegate.swift */; };
 		D5D99EB424097EE800E4DAD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D99EB324097EE800E4DAD5 /* SceneDelegate.swift */; };
-		D5D99EB624097EE800E4DAD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D99EB524097EE800E4DAD5 /* ViewController.swift */; };
+		D5D99EB624097EE800E4DAD5 /* InroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D99EB524097EE800E4DAD5 /* InroductionViewController.swift */; };
 		D5D99EB924097EE800E4DAD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D99EB724097EE800E4DAD5 /* Main.storyboard */; };
 		D5D99EBB24097EF600E4DAD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5D99EBA24097EF600E4DAD5 /* Assets.xcassets */; };
 		D5D99EBE24097EF600E4DAD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5D99EBC24097EF600E4DAD5 /* LaunchScreen.storyboard */; };
 		D5D99ECA2409923800E4DAD5 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D99EC92409923800E4DAD5 /* QuestionViewController.swift */; };
+		D5F0BD46240AAE4F00A8498C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0BD45240AAE4F00A8498C /* Question.swift */; };
+		D5F0BD4A240AAEEF00A8498C /* EnumarateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0BD49240AAEEF00A8498C /* EnumarateType.swift */; };
+		D5F0BD4C240AB08700A8498C /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0BD4B240AB08700A8498C /* Answers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D5D99EAE24097EE700E4DAD5 /* QuizWAY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizWAY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D99EB124097EE800E4DAD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5D99EB324097EE800E4DAD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5D99EB524097EE800E4DAD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5D99EB524097EE800E4DAD5 /* InroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InroductionViewController.swift; sourceTree = "<group>"; };
 		D5D99EB824097EE800E4DAD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5D99EBA24097EF600E4DAD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5D99EBD24097EF600E4DAD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5D99EBF24097EF600E4DAD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5D99EC92409923800E4DAD5 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		D5F0BD45240AAE4F00A8498C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		D5F0BD49240AAEEF00A8498C /* EnumarateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumarateType.swift; sourceTree = "<group>"; };
+		D5F0BD4B240AB08700A8498C /* Answers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,11 @@
 		D5D99EB024097EE700E4DAD5 /* QuizWAY */ = {
 			isa = PBXGroup;
 			children = (
-				D5D99EC524097F1B00E4DAD5 /* Supporting Files */,
+				D5F0BD48240AAE6000A8498C /* Model */,
 				D5D99EC624097F6700E4DAD5 /* Controller */,
-				D5D99EC82409800C00E4DAD5 /* Resources */,
 				D5D99EC724097FD100E4DAD5 /* View */,
+				D5D99EC524097F1B00E4DAD5 /* Supporting Files */,
+				D5D99EC82409800C00E4DAD5 /* Resources */,
 			);
 			path = QuizWAY;
 			sourceTree = "<group>";
@@ -79,7 +86,7 @@
 		D5D99EC624097F6700E4DAD5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D5D99EB524097EE800E4DAD5 /* ViewController.swift */,
+				D5D99EB524097EE800E4DAD5 /* InroductionViewController.swift */,
 				D5D99EC92409923800E4DAD5 /* QuestionViewController.swift */,
 			);
 			path = Controller;
@@ -100,6 +107,17 @@
 				D5D99EBA24097EF600E4DAD5 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D5F0BD48240AAE6000A8498C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5F0BD45240AAE4F00A8498C /* Question.swift */,
+				D5F0BD4B240AB08700A8498C /* Answers.swift */,
+				D5F0BD49240AAEEF00A8498C /* EnumarateType.swift */,
+			);
+			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +191,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5D99EB624097EE800E4DAD5 /* ViewController.swift in Sources */,
+				D5F0BD4C240AB08700A8498C /* Answers.swift in Sources */,
+				D5F0BD4A240AAEEF00A8498C /* EnumarateType.swift in Sources */,
+				D5F0BD46240AAE4F00A8498C /* Question.swift in Sources */,
+				D5D99EB624097EE800E4DAD5 /* InroductionViewController.swift in Sources */,
 				D5D99EB224097EE800E4DAD5 /* AppDelegate.swift in Sources */,
 				D5D99ECA2409923800E4DAD5 /* QuestionViewController.swift in Sources */,
 				D5D99EB424097EE800E4DAD5 /* SceneDelegate.swift in Sources */,
