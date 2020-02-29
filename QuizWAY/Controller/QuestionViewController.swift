@@ -25,6 +25,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet var diapasonSlider: UISlider!
     @IBOutlet var diapasonLabel: [UILabel]!
     
+    //MARK: - Property
     private var questionIndex = 0
     private let question = Question.getQuestions()
     private var respone: [Answers] = []
@@ -38,16 +39,21 @@ class QuestionViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "resultSegue" else { return }
         let resultVC = segue.destination as! ResultViewController
-        resultVC.respone = respone
+        resultVC.response = respone
     }
     
     //MARK: - IBAction
     @IBAction func singleAnswersButton(_ sender: UIButton) {
         guard let currentAnswerIndex = singleButtons.firstIndex(of: sender) else { return }
         let answers = question[questionIndex].answer
-        guard currentAnswerIndex > answers.count - 1 else { return }
-        respone.append(answers[currentAnswerIndex])
+        guard currentAnswerIndex < answers.count else { return }
         
+        //Clear text in button (very long animation in setTitile)
+        for button in singleButtons {
+            button.setTitle("", for: .normal)
+        }
+        
+        respone.append(answers[currentAnswerIndex])
         nextQuestion()
     }
     
@@ -58,7 +64,6 @@ class QuestionViewController: UIViewController {
                 respone.append(answer)
             }
         }
-        
         nextQuestion()
     }
     
@@ -66,11 +71,12 @@ class QuestionViewController: UIViewController {
         
         let answers = question[questionIndex].answer
         let currentAnswerIndex = Int(round(progressBar.progress * Float(answers.count - 1)))
-        respone.append(answers[currentAnswerIndex])
         
+        respone.append(answers[currentAnswerIndex])
         nextQuestion()
     }
     
+    //MARK: - Methods
     private func UpdateUI() {
         if question.isEmpty { return }
         let currentQuestion = question[questionIndex]
@@ -90,28 +96,25 @@ class QuestionViewController: UIViewController {
         }
     }
     
-    //MARK: - Methods
     private func singleQuestion(_ answers: [Answers]) {
-        singleStackView.isHidden = false
-        
         for (answerButton, answer) in zip(singleButtons, answers) {
             answerButton.setTitle(answer.text, for: .normal)
         }
+        singleStackView.isHidden = false
     }
     
     private func manyQuestion(_ answers: [Answers]) {
-        manyStackView.isHidden = false
-        
         for (answerLabel, answer) in zip(manyAnswersText, answers) {
             answerLabel.text = answer.text
         }
+        manyStackView.isHidden = false
     }
     
     private func diapasonQuestion(_ answers: [Answers]) {
-        diapasonStackView.isHidden = false
-        
         diapasonLabel.first?.text = answers.first?.text
         diapasonLabel.last?.text = answers.last?.text
+        
+        diapasonStackView.isHidden = false
     }
     
     private func nextQuestion() {

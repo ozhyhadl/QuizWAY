@@ -25,7 +25,7 @@ extension Question {
                 ]
             ),
             Question(text: "Your favorite action?",
-                     type: .single,
+                     type: .many,
                      answer: [
                         Answers(text: "Hug - 🤗", animal: .dog),
                         Answers(text: "Run - 🏃‍♂️", animal: .rabbit),
@@ -34,7 +34,7 @@ extension Question {
                 ]
             ),
             Question(text: "Do you like car rides?",
-                     type: .single,
+                     type: .diapason,
                      answer: [
                         Answers(text: "Hate - 😱", animal: .rabbit),
                         Answers(text: "Nervous", animal: .panda),

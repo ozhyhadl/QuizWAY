@@ -9,7 +9,8 @@
 import UIKit
 
 class InroductionViewController: UIViewController {
-
-
+    
+    //UnwindSegue connect with button "Done" in ResultVC
+    @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {}
 }
 
