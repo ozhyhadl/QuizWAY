@@ -17,6 +17,7 @@
 		D5F0BD46240AAE4F00A8498C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0BD45240AAE4F00A8498C /* Question.swift */; };
 		D5F0BD4A240AAEEF00A8498C /* EnumarateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0BD49240AAEEF00A8498C /* EnumarateType.swift */; };
 		D5F0BD4C240AB08700A8498C /* Answers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0BD4B240AB08700A8498C /* Answers.swift */; };
+		D5F0BD4E240B064500A8498C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0BD4D240B064500A8498C /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D5F0BD45240AAE4F00A8498C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		D5F0BD49240AAEEF00A8498C /* EnumarateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumarateType.swift; sourceTree = "<group>"; };
 		D5F0BD4B240AB08700A8498C /* Answers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answers.swift; sourceTree = "<group>"; };
+		D5F0BD4D240B064500A8498C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				D5D99EB524097EE800E4DAD5 /* InroductionViewController.swift */,
 				D5D99EC92409923800E4DAD5 /* QuestionViewController.swift */,
+				D5F0BD4D240B064500A8498C /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				D5F0BD4C240AB08700A8498C /* Answers.swift in Sources */,
 				D5F0BD4A240AAEEF00A8498C /* EnumarateType.swift in Sources */,
 				D5F0BD46240AAE4F00A8498C /* Question.swift in Sources */,
+				D5F0BD4E240B064500A8498C /* ResultViewController.swift in Sources */,
 				D5D99EB624097EE800E4DAD5 /* InroductionViewController.swift in Sources */,
 				D5D99EB224097EE800E4DAD5 /* AppDelegate.swift in Sources */,
 				D5D99ECA2409923800E4DAD5 /* QuestionViewController.swift in Sources */,

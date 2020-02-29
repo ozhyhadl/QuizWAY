@@ -9,7 +9,7 @@
 enum ResponseQuestion  {
     case single
     case many
-    case slider
+    case diapason
 }
 
 enum Animal: String {
