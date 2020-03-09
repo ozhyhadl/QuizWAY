@@ -1,6 +1,6 @@
 # QuizWAY
 
-has three modules to answer this:
+Has three modules to answer this:
 * out of 4 options, you need to choose one
 * out of 4 options, you choose a few
 * slider
