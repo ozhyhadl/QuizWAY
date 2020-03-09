@@ -9,7 +9,7 @@ For each answer, one or more animals are given a point. Points are summed up and
 
 # Screenshot
 
-<img src="https://user-images.githubusercontent.com/48784547/76235629-07fc0600-6234-11ea-90bd-e69e988a30a6.png" width="30%"></img>
+<img src="https://user-images.githubusercontent.com/48784547/76235629-07fc0600-6234-11ea-90bd-e69e988a30a6.png" width="30%" height="95"></img>
 <img src="https://user-images.githubusercontent.com/48784547/76235632-08949c80-6234-11ea-9af3-7a3b24c195a4.png" width="30%"></img>
 <img src="https://user-images.githubusercontent.com/48784547/76235636-0a5e6000-6234-11ea-8036-b2012e2795de.png" width="30%"></img>
 <img src="https://user-images.githubusercontent.com/48784547/76235639-0b8f8d00-6234-11ea-89ad-b14a7e7cb378.png" width="30%"></img>
